@@ -1,16 +1,7 @@
 #!/usr/bin/env node
 
-function printDigits(args) {
-    let result = "\n\n";
-    for (let j = 0; j < 6; j++) {
-        for (let i = 0; i < args.length; i++) {
-            result += digits[args[i]][j] + " ";
-        };
-        result += "\n";
-    };
-
-    console.log(result);
-};
+const hideCursor = require("hide-terminal-cursor");
+hideCursor();
 
 function printTime(args) {
     const [ hours, minutes, seconds ] = args;
@@ -127,5 +118,5 @@ const digits = [
 
 setInterval(() => {
     console.clear();
-    printTime(getTime(0));
+    setTimeout(() => printTime(getTime(0)), 100);
 }, 1000);

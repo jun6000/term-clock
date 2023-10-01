@@ -21,5 +21,8 @@
   "bugs": {
     "url": "https://github.com/jun6000/term-clock/issues"
   },
-  "homepage": "https://github.com/jun6000/term-clock#readme"
+  "homepage": "https://github.com/jun6000/term-clock#readme",
+  "dependencies": {
+    "hide-terminal-cursor": "^0.0.1"
+  }
 }
