@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "An fancy clock in your terminal.",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -23,6 +24,7 @@
   },
   "homepage": "https://github.com/jun6000/term-clock#readme",
   "dependencies": {
+    "chalk-animation": "^2.0.3",
     "hide-terminal-cursor": "^0.0.1"
   }
 }

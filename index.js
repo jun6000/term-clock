@@ -1,5 +1,8 @@
 #!/usr/bin/env node
 
+import chalkAnimation from "chalk-animation";
+import { createRequire } from "module";
+const require = createRequire(import.meta.url);
 const hideCursor = require("hide-terminal-cursor");
 hideCursor();
 
@@ -12,7 +15,7 @@ function printTime(args) {
                 + digits[Math.floor(seconds / 10)][i] + ' ' + digits[seconds % 10][i] + '\n';
     };
 
-    console.log(result);
+    chalkAnimation.pulse(result, 0.9);
 };
 
 function getTime(format) {
@@ -118,5 +121,5 @@ const digits = [
 
 setInterval(() => {
     console.clear();
-    setTimeout(() => printTime(getTime(0)), 100);
-}, 1000);
+    printTime(getTime(0));
+}, 1000)
