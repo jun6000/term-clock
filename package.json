@@ -24,6 +24,7 @@
   },
   "homepage": "https://github.com/jun6000/term-clock#readme",
   "dependencies": {
+    "center-align": "^1.0.1",
     "chalk-animation": "^2.0.3",
     "hide-terminal-cursor": "^0.0.1"
   }
